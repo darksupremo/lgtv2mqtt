@@ -1,2 +1,2 @@
 @echo off
-docker build -t uilton/lgtv2mqtt:latest .
+docker build -t ghcr.io/darksupremo/lgtv2mqtt:latest .

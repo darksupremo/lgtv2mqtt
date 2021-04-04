@@ -1,17 +1,17 @@
 {
     "name": "lgtv2mqtt",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Interface between LG WebOS Smart TVs and MQTT",
-    "main": "index.js",
-    "preferGlobal": true,
-    "bin": "./index.js",
+    "main": "app/index.js",
+    "bin": "./app/index.js",
     "engines": {
-        "node": ">=6.0.0"
+        "node": ">=14.0.0"
     },
     "engineStrict": true,
     "scripts": {
-        "start": "node index.js",
-        "test": "camo-purge ; xo"
+        "start": "node app/index.js",
+        "lint": "xo",
+        "lint-fix": "xo --fix"
     },
     "repository": {
         "type": "git",
@@ -37,10 +37,10 @@
     "homepage": "https://github.com/hobbyquaker/lgtv2mqtt",
     "dependencies": {
         "lgtv2": "DarkSupremo/lgtv2",
-        "lodash": "^4.17.19",
-        "mqtt": "^4.1.0",
+        "lodash": "^4.17.21",
+        "mqtt": "^4.2.6",
         "winston": "^3.3.3",
-        "winston-daily-rotate-file": "^4.5.0",
+        "winston-daily-rotate-file": "^4.5.1",
         "wol": "^1.0.7"
     },
     "xo": {

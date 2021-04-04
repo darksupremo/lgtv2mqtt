@@ -11,4 +11,4 @@ docker run -it --rm ^
     -e CLIENT_KEY_PATH=/usr/node_app/lgkey/ ^
     -e LOG_PATH=/var/log ^
     -v "A:\Data\lgkey:/usr/node_app/lgkey" ^
-    uilton/lgtv2mqtt:latest
+    ghcr.io/darksupremo/lgtv2mqtt:latest

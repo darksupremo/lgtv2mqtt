@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
     lgtv2mqtt:
-        image: uilton/lgtv2mqtt
+        image: ghcr.io/darksupremo/lgtv2mqtt:latest
         restart: unless-stopped
         environment:
             - TV_MAC=60:AB:14:C5:CA:4E
