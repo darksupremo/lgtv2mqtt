@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:15-alpine
 
 RUN mkdir -p /usr/node_app/lgkey
 COPY . /usr/node_app
