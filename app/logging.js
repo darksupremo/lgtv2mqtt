@@ -19,9 +19,7 @@ const timezoned = () => {
         year: 'numeric',
         day: 'numeric',
         month: 'numeric',
-        dateStyle: 'full',
         timeZoneName: 'short',
-        timeStyle: 'full',
         timeZone: process.env.TZ
     });
 };
