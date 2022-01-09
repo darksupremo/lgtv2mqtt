@@ -37,6 +37,7 @@ const host = process.env.MQTT_HOST;
 const mqttUsername = process.env.MQTT_USER;
 const mqttPassword = process.env.MQTT_PASS;
 const mqttName = process.env.MQTT_NAME;
+const mqttClientId = process.env.MQTT_CLIENT_ID || "lgtv2mqtt";
 
 let logName = mqttName;
 
@@ -58,7 +59,9 @@ exports.setupClient = function (connectedCallback, disconnectedCallback) {
         process.abort();
     }
 
-    const mqttOptions = {};
+    const mqttOptions = {
+        clientId: mqttClientId
+    };
 
     if (!_.isNil(mqttUsername)) {
         mqttOptions.username = mqttUsername;
